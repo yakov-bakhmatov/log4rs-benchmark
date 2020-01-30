@@ -1,0 +1,16 @@
+[package]
+name = "log4rs-benchmark"
+version = "0.1.0"
+authors = ["Yakov Bakhmatov <yakov@bakhmatov.ru>"]
+edition = "2018"
+license = "MIT"
+
+[features]
+async_rotation = ["log4rs/async_rotation"]
+
+[dependencies]
+log = "0.4"
+log4rs = "0.10"
+
+[patch.crates-io]
+log4rs = { git = "https://github.com/yakov-bakhmatov/log4rs", branch = "async-rotation" }
