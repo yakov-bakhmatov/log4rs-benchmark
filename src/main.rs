@@ -30,7 +30,7 @@ fn main() {
 }
 
 fn write_logs() {
-    let threshold = Duration::from_millis(50);
+    let threshold = Duration::from_millis(100);
     loop {
         let now = Instant::now();
         a::write_log();
